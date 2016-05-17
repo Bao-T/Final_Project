@@ -6,6 +6,18 @@
 #include "Tile.h"
 #include <fstream>
 using namespace std;
+
+int diceRoll();
+void saveGame(int players, Player playerArray[], Board &b1);
+void loadGame(int &players, Player playerArray[], Board &b1);
+void playGame();
+
+int main()
+{
+	playGame();
+}
+
+
 int diceRoll()
 {
 	srand(time(NULL));
@@ -61,7 +73,7 @@ void loadGame(int &players, Player playerArray[], Board &b1)
 			fin >> y; b1.boardCoordinates[row][column].setTValue(y);
 			for (int node = 1; node <= 6; node++)
 			{
-				fin >> y; b1.boardCoordinates[row][column].setTNodesForSave(node -1,y);
+				fin >> y; b1.boardCoordinates[row][column].setTNodesForSave(node - 1, y);
 				fin >> x; b1.boardCoordinates[row][column].setTNodeState(node - 1, x);
 				fin >> y; b1.boardCoordinates[row][column].setTSide(node - 1, y);
 			}
@@ -80,7 +92,8 @@ void loadGame(int &players, Player playerArray[], Board &b1)
 	}
 	fin.close();
 }
-int main() {
+void playGame()
+{
 	int players;
 	bool valid = false;
 	cout << "Welcome to Settlers of Catron.\nNew game or Load Game? (n,l)\n";
@@ -120,13 +133,13 @@ int main() {
 			int node;
 			do {
 				cout << "Please place your first house.\n Tile #:";
-				
-					cin >> tile;
-				
+
+				cin >> tile;
+
 				cout << "Node #:";
-			
-					cin >> node;
-				
+
+				cin >> node;
+
 			} while (b1.checkFirstNodePlace(i + 1, tile, node) != true);
 			b1.placeFirstNode(i + 1, tile, node);
 			b1.displayBoard();
@@ -135,11 +148,11 @@ int main() {
 			int rSide;
 			do {
 				cout << "Please place your first road.\n Tile #:";
-	
+
 				cin >> rTile;
-		
+
 				cout << "Side #:";
-					cin >> rSide;
+				cin >> rSide;
 			} while (b1.checkRoadPlace(i + 1, rTile - 1, rSide - 1) != true);
 			b1.placeRoad(i + 1, rTile, rSide);
 			b1.displayBoard();
@@ -179,12 +192,12 @@ int main() {
 
 		if (fin.fail()) { cerr << "Error Opening File" << endl; exit(1); }
 		fin >> players;
-		 playerArray = new Player[players];
-		 loadGame(players, playerArray, b1);
+		playerArray = new Player[players];
+		loadGame(players, playerArray, b1);
 	}
-	
+
 	b1.changePlayerCount(players);
-	
+
 	static int counter = 0;
 	system("CLS");
 	do
@@ -202,7 +215,7 @@ int main() {
 				{
 					int row = b1.tileToBoardCoordinates(tiles + 1).first;
 					int column = b1.tileToBoardCoordinates(tiles + 1).second;
-					if (b1.returnTileValue(row, column) == roll && b1.returnRobber(row,column) != true )
+					if (b1.returnTileValue(row, column) == roll && b1.returnRobber(row, column) != true)
 					{
 						for (int node = 1; node <= 6; node++)
 						{
@@ -276,11 +289,11 @@ int main() {
 			system("CLS");
 			b1.displayBoard();
 		}
-		
+
 		int option;
-		
+
 		do {
-		
+
 			b1.displayBoard();
 			cout << "The dice gods have given you a " << roll << "!\n";
 			cout << "Wood = " << playerArray[currentPlayer].getWood() << "    Wheat = " << playerArray[currentPlayer].getWheat() << "    Ore = " << playerArray[currentPlayer].getOre() << "    Clay = " << playerArray[currentPlayer].getClay() << "    Sheep = " << playerArray[currentPlayer].getSheep() << endl;
@@ -291,7 +304,7 @@ int main() {
 			{
 				if (playerArray[currentPlayer].getWood() > 0 && playerArray[currentPlayer].getClay() > 0)
 				{
-					
+
 					int rTile;
 					int rSide;
 					do {
@@ -299,8 +312,8 @@ int main() {
 						cin >> rTile;
 						cout << "Side #:";
 						cin >> rSide;
-					} while (b1.checkRoadPlace(currentPlayer + 1, rTile-1, rSide-1) != true);
-					b1.placeRoad(currentPlayer+ 1, rTile, rSide);
+					} while (b1.checkRoadPlace(currentPlayer + 1, rTile - 1, rSide - 1) != true);
+					b1.placeRoad(currentPlayer + 1, rTile, rSide);
 					playerArray[currentPlayer].changeWood(-1);
 					playerArray[currentPlayer].changeClay(-1);
 				}
@@ -313,7 +326,7 @@ int main() {
 			{
 				if (playerArray[currentPlayer].getWood() > 0 && playerArray[currentPlayer].getWheat() > 0 && playerArray[currentPlayer].getSheep() > 0 && playerArray[currentPlayer].getClay() > 0)
 				{
-					
+
 					int tile;
 					int node;
 					do {
@@ -321,8 +334,8 @@ int main() {
 						cin >> tile;
 						cout << "Node #:";
 						cin >> node;
-					} while (b1.checkFirstNodePlace(currentPlayer+1, tile, node) != true);
-					b1.placeNode(currentPlayer+1, tile, node);
+					} while (b1.checkFirstNodePlace(currentPlayer + 1, tile, node) != true);
+					b1.placeNode(currentPlayer + 1, tile, node);
 					playerArray[currentPlayer].changeWood(-1);
 					playerArray[currentPlayer].changeClay(-1);
 					playerArray[currentPlayer].changeWheat(-1);
@@ -338,8 +351,8 @@ int main() {
 			{
 				if (playerArray[currentPlayer].getWheat() > 1 && playerArray[currentPlayer].getOre() > 2)
 				{
-				
-					
+
+
 					int tile;
 					int node;
 					do {
@@ -347,8 +360,8 @@ int main() {
 						cin >> tile;
 						cout << "Node #:";
 						cin >> node;
-					} while (b1.checkCityPlace(currentPlayer+1, tile, node) != true);
-					b1.placeCity(currentPlayer+1, tile, node);
+					} while (b1.checkCityPlace(currentPlayer + 1, tile, node) != true);
+					b1.placeCity(currentPlayer + 1, tile, node);
 					playerArray[currentPlayer].changeWheat(-2);
 					playerArray[currentPlayer].changeOre(-3);
 				}

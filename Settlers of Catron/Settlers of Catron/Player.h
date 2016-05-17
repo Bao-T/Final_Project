@@ -17,21 +17,27 @@ private:
 	int score = 0;
 
 public:
+	//Constructor
 	Player() {}
-	int getOre() { return ore; }
-	int getClay() { return clay; }
-	int getWood() { return wood; }
-	int getSheep() { return sheep; }
-	int getWheat() { return wheat; }
-	int getPlayer() { return pID; }
-	int getPlayerScore() { return score; }
+	////——————————Accessors
+	/**/int getOre() { return ore; }
+	/**/int getClay() { return clay; }
+	/**/int getWood() { return wood; }
+	/**/int getSheep() { return sheep; }
+	/**/int getWheat() { return wheat; }
+	/**/int getPlayer() { return pID; }
+	/**/int getPlayerScore() { return score; }
+	////————————————————————
 
-	void changeOre(int amount) { ore += amount; }
-	void changeClay(int amount) { clay += amount; }
-	void changeWood(int amount) { wood += amount; }
-	void changeSheep(int amount) { sheep += amount; }
-	void changeWheat(int amount) { wheat += amount; }
-	void changeScore(int amount) { score += amount; }
+
+	////————Incremental Mutators
+	/**/void changeOre(int amount) { ore += amount; }
+	/**/void changeClay(int amount) { clay += amount; }
+	/**/void changeWood(int amount) { wood += amount; }
+	/**/void changeSheep(int amount) { sheep += amount; }
+	/**/void changeWheat(int amount) { wheat += amount; }
+	/**/void changeScore(int amount) { score += amount; }
+	////———————————————————————
 };
 
 #endif
