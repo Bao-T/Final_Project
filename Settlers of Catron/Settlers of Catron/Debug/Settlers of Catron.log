@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\bao\desktop\settlers of catron\settlers of catron\board.h(176): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bao\desktop\settlers of catron\settlers of catron\main.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Settlers of Catron.vcxproj -> C:\Users\Bao\Desktop\Settlers of Catron\Debug\Settlers of Catron.exe
