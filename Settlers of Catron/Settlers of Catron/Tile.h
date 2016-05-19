@@ -7,6 +7,7 @@ class Tile {
 private:
 	/*int tileSides[6] = { 1,1,1,1,1,1 };
 	int tileNodes[6] = { -1,-1,1,1,1,1 };*/
+	// default values for all Tile types created
 	int tileSides[6] = { -1,-1,-1,-1,-1,-1 };
 	int tileNodes[6] = { -1,-1,-1,-1,-1,-1 };
 	char tileNodesState[6] = { 'H','H','H','H','H','H' };

@@ -74,7 +74,7 @@ public:
 	Assigns one tile the designation "Desert," and sets that tile to start with the Thief.
 	void setBoard();
 
-	// might not even be a necessary function
+	// used for loading games
 	void changePlayerCount(int x);
 
 	// assigns color to the player based upon their int value (1-4)
@@ -92,7 +92,7 @@ public:
 	// sets a tile to have the robber
 	void setRobber(int tile);
 
-	// ?? (probably checks to see if road claim is legal)
+	// checks to see if road claim is legal
 	bool checkRoadPlace(int player, int tile, int side);
 
 	// allows a given player to claim a node on the board
@@ -101,15 +101,15 @@ public:
 	// allows a given player to upgrade a claimed node
 	void placeCity(int player, int tile, int node);
 
-	// ?? (probably checks to see if node claim is legal)
+	// checks to see if node claim is legal
 	bool checkNodePlace(int player, int tile, int node);
 
-	// ?? (probably checks to see if node upgrade is legal)
+	// checks to see if node upgrade is legal
 	bool checkCityPlace(int player, int tile, int node);
 
 	// allows the claim of the first nodes of the game (each player gets two)
 	void placeFirstNode(int player, int tile, int node);
 
-	// ?? (probably checks to see if first node claim is legal)
+	// checks to see if first node claim is legal
 	bool checkFirstNodePlace(int player, int tile, int node);
 };

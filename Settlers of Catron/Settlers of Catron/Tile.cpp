@@ -8,9 +8,11 @@ void Tile::setFirstTNodes(int index, int player)
 
 void Tile::setTNodes(int index, int value) 
 {
+	
 	int before = abs(((index + 5) % 6));
 	int after = abs((index + 1) % 6);
 	tileNodes[index] = value;
+	// makes nodes 1 index away invalid to use so node cannot be placed next to eachother
 	tileNodes[before] = -2;
 	tileNodes[after] = -2;
 

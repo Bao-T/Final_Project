@@ -16,8 +16,9 @@ Board::Board(int p) {
 
 void Board::displayBoard()
 {
-	system("CLS");
-	const int extraOffset = 10;
+	system("CLS"); // clears screen
+	const int extraOffset = 10; // how much the board is position to the right of the screen
+	// The rest of the code goes through several loops to create a display that implements the state of variables and assigns colors to ascii values based on the state through color functions.
 	for (int i = 0; i < 12 + extraOffset; i++)
 	{
 		cout << " ";
@@ -154,7 +155,7 @@ void Board::setBoard()
 	{
 		if (oddOrEven == 0) // starts with row 1 or 3
 		{
-			if (evenCounter < 4)
+			if (evenCounter < 4) // even rows ( rows 2 and 4 (index 3 or 5)) only have 4 columns
 			{
 				int tempRow = rand() % 2;
 				if (tempRow == 0) // row 1 start
@@ -162,7 +163,7 @@ void Board::setBoard()
 					int tempColumn = rand() % 4;
 					do
 					{
-						tempColumn = rand() % 4;
+						tempColumn = rand() % 4; // random column after row is determined
 					} while (boardCoordinates[1][tempColumn].getTValue() != -1);
 					boardCoordinates[1][tempColumn].setTValue(values[index]);
 					index++;
@@ -193,7 +194,7 @@ void Board::setBoard()
 			}
 
 			///////
-			if (oddCounter <6)
+			if (oddCounter <6) // rows 0 and 4 are counted seperately. if row 0, row 0 and row 2 get assigned. if row 4, row 4 and row 2 get assigned. since row 0 and 4 have 3 tiles, together they make up 6 indexes
 			{
 
 				int tempColumn = rand() % 3;
@@ -231,7 +232,7 @@ void Board::setBoard()
 				oddCounter++;
 			}
 		}
-		else
+		else // does the same thing but starts with rows 0, 2, or 4
 		{
 			if (oddCounter < 6)
 			{
@@ -349,7 +350,7 @@ void Board::changePlayerCount(int x)
 
 void Board::colorPlayer(char text, int player) {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	if (player == -1)
+	if (player <= -1)
 		SetConsoleTextAttribute(hConsole, 0x00); // Black
 	if (player == 1)
 		SetConsoleTextAttribute(hConsole, 0x0C); // Red
@@ -382,8 +383,8 @@ void Board::colorTile(char type) {
 	SetConsoleTextAttribute(hConsole, 0x0F); // Default
 }
 
-// maybe change this one to be a switch statement (below)
-pair<int, int> Board::tileToBoardCoordinates(int tile) 
+
+pair<int, int> Board::tileToBoardCoordinates(int tile) // converts tile input to board coordinates
 {
 	pair <int, int> boardCoordinates;
 	
@@ -493,16 +494,16 @@ void Board::placeRoad(int player, int tile, int side)
 	if (checkRoadPlace(player, tile - 1, side - 1) == true)
 	{
 		*sideAddressCoordinates[tile - 1][side - 1] = player;
-		if (side == 1)
+		if (side == 1) // side 1
 		{
-			int nextTo[19] = { -1,-1,-1,0,1,2,-1,3,4,5,6,-1,8,9,10,11,13,14,15 };
-			int oppositeSide = (side + 2) & 6 + 1;
-			if (nextTo[tile - 1] != -1)
+			int nextTo[19] = { -1,-1,-1,0,1,2,-1,3,4,5,6,-1,8,9,10,11,13,14,15 }; // arrays used to reference which tiles are adjacent to that side, -1 means no tiles adjacent
+			int oppositeSide = (side + 2) & 6 + 1; // adjacent sides will always be opposites in hexagon
+			if (nextTo[tile - 1] != -1) // sets the adjacent tile and opposite side to same player so board display will be correct since tiles can share the same sides
 			{
 				*sideAddressCoordinates[nextTo[tile - 1]][oppositeSide] = player;
 			}
 		}
-		if (side == 2)
+		if (side == 2) // same thing
 		{
 			int nextTo[19] =
 			{
@@ -512,7 +513,7 @@ void Board::placeRoad(int player, int tile, int side)
 				13,14,15,-1,
 				17,18,-1
 			};
-			int oppositeSide = (side + 2) & 6 + 1;
+			int oppositeSide = (side + 2) % 6 + 1;
 			if (nextTo[tile - 1] != -1)
 			{
 				*sideAddressCoordinates[nextTo[tile - 1]][oppositeSide] = player;
@@ -528,7 +529,7 @@ void Board::placeRoad(int player, int tile, int side)
 				16,17,18,-1,
 				-1,-1,-1
 			};
-			int oppositeSide = (side + 2) & 6 + 1;
+			int oppositeSide = (side + 2) %6 + 1;
 			if (nextTo[tile - 1] != -1)
 			{
 				*sideAddressCoordinates[nextTo[tile - 1]][oppositeSide] = player;
@@ -544,7 +545,7 @@ void Board::placeRoad(int player, int tile, int side)
 				-1,16,17,18,
 				-1,-1,-1
 			};
-			int oppositeSide = (side + 2) & 6 + 1;
+			int oppositeSide = (side + 2) % 6 + 1;
 			if (nextTo[tile - 1] != -1)
 			{
 				*sideAddressCoordinates[nextTo[tile - 1] - 1][oppositeSide] = player;
@@ -560,7 +561,7 @@ void Board::placeRoad(int player, int tile, int side)
 				-1,12,13,14,
 				-1,16,17
 			};
-			int oppositeSide = (side + 2) & 6 + 1;
+			int oppositeSide = (side + 2) % 6 + 1;
 			if (nextTo[tile - 1] != -1)
 			{
 				*sideAddressCoordinates[nextTo[tile - 1] - 1][oppositeSide] = player;
@@ -576,7 +577,7 @@ void Board::placeRoad(int player, int tile, int side)
 				7,8,9,10,
 				12,13,14
 			};
-			int oppositeSide = (side + 4) & 6;
+			int oppositeSide = (side + 4)% 6;
 			if (nextTo[tile - 1] != -1)
 			{
 				*sideAddressCoordinates[nextTo[tile - 1]][oppositeSide] = player;
@@ -593,7 +594,7 @@ void Board::setRobber(int tile)
 {
 	int row = tileToBoardCoordinates(tile).first;
 	int column = tileToBoardCoordinates(tile).second;
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++) //find the current robber and set it to false
 	{
 		for (int j = 0; j < 5 - abs(2 - i); j++)
 		{
@@ -603,34 +604,35 @@ void Board::setRobber(int tile)
 			}
 		}
 	}
-	boardCoordinates[row][column].setTRobber(true);
+	boardCoordinates[row][column].setTRobber(true); // set target tile to robber true
 }
 
 bool Board::checkRoadPlace(int player, int tile, int side)
 {
 
-	if (side < 0 || side >5)
+	if (side < 0 || side >5) // valid row
 	{
 		return false;
 	}
-	if (tile < 0 || tile >18)
+	if (tile < 0 || tile >18) // valid tile
 	{
 		return false;
 	}
-	if (*sideAddressCoordinates[tile][side] != -1)
+	if (*sideAddressCoordinates[tile][side] != -1) // if side has no player value
 	{
 		return false;
 	}
-	if (*nodeReferenceCoordinates[tile][side] == player || *nodeReferenceCoordinates[tile][(side + 1) % 6] == player)
+	if (*nodeReferenceCoordinates[tile][side] == player || *nodeReferenceCoordinates[tile][(side + 1) % 6] == player) // if house/town is connected to the road
 	{
 		return true;
 	}
+	// turns index to tile values for ease of use and reference to other functions
 	side++;
 	tile++;
-	if (side == 1)
+	if (side == 1) // side one
 	{
-		int nextTo[19] = { -1,-1,-1,0,1,2,-1,3,4,5,6,-1,8,9,10,11,13,14,15 };
-		int oppositeSide = abs((side + 1) & 6);
+		int nextTo[19] = { -1,-1,-1,0,1,2,-1,3,4,5,6,-1,8,9,10,11,13,14,15 }; // assigns adjacent tiles
+		int oppositeSide = abs((side + 1) % 6); // check the sides the is represented as the same side on the board
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -642,7 +644,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 				return false;
 		}
 	}
-	if (side == 2)
+	if (side == 2) // code repeates but with different reference sides
 	{
 		int nextTo[19] =
 		{
@@ -652,7 +654,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 			13,14,15,-1,
 			17,18,-1
 		};
-		int oppositeSide = abs((side + 1) & 6);
+		int oppositeSide = abs((side + 1) % 6);
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -674,7 +676,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 			16,17,18,-1,
 			-1,-1,-1
 		};
-		int oppositeSide = abs((side + 1) & 6);
+		int oppositeSide = abs((side + 1) % 6);
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -696,7 +698,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 			-1,16,17,18,
 			-1,-1,-1
 		};
-		int oppositeSide = abs((side + 1) & 6);
+		int oppositeSide = abs((side + 1) % 6);
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -718,7 +720,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 			-1,12,13,14,
 			-1,16,17
 		};
-		int oppositeSide = abs((side + 1) & 6);
+		int oppositeSide = abs((side + 1) % 6);
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -740,7 +742,7 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 			7,8,9,10,
 			12,13,14
 		};
-		int oppositeSide = abs((side + 1) & 6);
+		int oppositeSide = abs((side + 1) % 6);
 		if (nextTo[tile - 1] != -1)
 		{
 			if (*sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide + 1) % 6] != player && *sideAddressCoordinates[nextTo[tile - 1]][(oppositeSide - 1) % 6] != player && *sideAddressCoordinates[tile - 1][abs((side - 2) % 6)] != player &&*sideAddressCoordinates[tile - 1][(abs(side) % 6)] != player)
@@ -758,12 +760,16 @@ bool Board::checkRoadPlace(int player, int tile, int side)
 void Board::placeNode(int player, int tile, int node)
 {
 
-	if (checkNodePlace(player, tile, node) == true)
+	if (checkNodePlace(player, tile, node) == true) // checks if valid
 	{
+		// converts to array coordinates
 		int row = tileToBoardCoordinates(tile).first;
 		int column = tileToBoardCoordinates(tile).second;
+		// allows for index to start at 0
 		node--;
-		boardCoordinates[row][column].setTNodes(node, player);
+		boardCoordinates[row][column].setTNodes(node, player); // sets target node
+		// code identifies nodes that are the same on the board display but within different Tile objects
+		// for each of the following if statements, code sets corresponding nodes from adjacent tiles to the same player to be displayed on the board.
 		if (node == 0)
 		{
 
@@ -1013,13 +1019,14 @@ void Board::placeNode(int player, int tile, int node)
 	}
 }
 
-// could also maybe use switch statements on this one
+
 void Board::placeCity(int player, int tile, int node)
 {
 
-	if (checkNodePlace(player, tile, node) == true)
+	if (checkCityPlace(player, tile, node) == true) // checks if node is already assigned a player and that player is valid
 	{
 		char state = 'T';
+		// codes does the same as placeNode but changes the nodestatus to a T instead of and H
 		int row = tileToBoardCoordinates(tile).first;
 		int column = tileToBoardCoordinates(tile).second;
 		node--;
@@ -1277,21 +1284,23 @@ bool Board::checkNodePlace(int player, int tile, int node)
 {
 	node--;
 	tile--;
-	if (node < 0 || node > 5 || tile < 0 || tile > 18)
+	if (node < 0 || node > 5 || tile < 0 || tile > 18) // checks for valid index
 	{
 		return false;
 	}
-	if (*nodeReferenceCoordinates[tile][node] == player)
+	if (*nodeReferenceCoordinates[tile][node] == player) // checks if node is already assigned
 	{
 		return false;
 	}
-	if (*nodeReferenceCoordinates[tile][node] != -1 || *nodeReferenceCoordinates[tile][node] == -2)
+	if (*nodeReferenceCoordinates[tile][node] != -1 || *nodeReferenceCoordinates[tile][node] == -2) // checks if node is vacant and is not too close to another node
 	{
 		return false;
 	}
+	// converts to array indexes
 	int row = tileToBoardCoordinates(tile).first;
 	int column = tileToBoardCoordinates(tile).second;
-	if (*sideAddressCoordinates[tile][node] == player || *sideAddressCoordinates[tile][((node)+5) % 6] == player)
+
+	if (*sideAddressCoordinates[tile][node] == player || *sideAddressCoordinates[tile][((node)+5) % 6] == player) // checks if a road is adjacent to a tile
 	{
 		return true;
 	}
@@ -1302,31 +1311,26 @@ bool Board::checkCityPlace(int player, int tile, int node)
 {
 	node--;
 	tile--;
-	if (node < 0 || node > 5 || tile < 0 || tile > 18)
+	if (node < 0 || node > 5 || tile < 0 || tile > 18) // checks if valid position
 	{
 		return false;
 	}
-	if (*nodeReferenceCoordinates[tile][node] == player)
+	if (*nodeReferenceCoordinates[tile][node] == player) // checks if player already own the node
 	{
 		return true;
 	}
-	if (*nodeReferenceCoordinates[tile][node] != -1 || *nodeReferenceCoordinates[tile][node] == -2)
+	if (*nodeReferenceCoordinates[tile][node] != -1 || *nodeReferenceCoordinates[tile][node] == -2) // checks if the node is unclaimed 
 	{
 		return false;
 	}
-	int row = tileToBoardCoordinates(tile).first;
-	int column = tileToBoardCoordinates(tile).second;
-	if (*sideAddressCoordinates[tile][node] == player || *sideAddressCoordinates[tile][((node)+5) % 6] == player)
-	{
-		false;
-	}
+	
 	return false;
 }
 
 // looked like a switch could clean this one up too
 void Board::placeFirstNode(int player, int tile, int node)
 {
-
+	//same code as place node but without checking if there are roads connecting yet
 	if (checkFirstNodePlace(player, tile, node) == true)
 	{
 		int row = tileToBoardCoordinates(tile).first;
@@ -1584,7 +1588,7 @@ void Board::placeFirstNode(int player, int tile, int node)
 
 bool Board::checkFirstNodePlace(int player, int tile, int node)
 {
-
+	// does not need to have a road adjacent to the node
 	node--;
 	tile--;
 	if (node < 0 || node > 5 || tile < 0 || tile > 18)
