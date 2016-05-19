@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e53bbf6c-ef44-49db-9da6-2d3a11301f97" name="UMLClassDiagram1" linkedPackageId="a550f1f6-94b6-431d-8896-d09aca4e8e29" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ec15f99d-2fc5-403b-968f-a3787a421a65">
+      <profileInstance Id="8a9b45d3-736e-4169-8aad-a81961fdfde6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c5ef7abc-159e-4606-a3e4-c0b8a973d543">
+      <profileInstance Id="7d9a18db-6f75-4d85-94de-ed59c501b2af" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="067612a4-6160-4dc8-8756-34d6c635b327" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="1bc55bd8-f3f2-4882-9e62-9ede9240e759" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="de8bdeb0-365b-41f1-ab67-1c65903fa191" name="Row int  [Column int[Tile]]" isAbstract="false" isLeaf="false" cachedFullName="Row int  [Column int[Tile]]">
+        <elementDefinition Id="5ae122a6-ae5d-4b50-b661-e2f12e5681ce" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="27f37375-fb04-4e8b-93ec-7185abc82d69" name="CaTron UML::Board" isAbstract="false" isLeaf="false" cachedFullName="CaTron UML::Board">
+        <elementDefinition Id="468ef88f-c57a-4afb-a046-e375dc674ad4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" name="Void" isAbstract="false" isLeaf="false" cachedFullName="Void">
+        <elementDefinition Id="ff792e1c-2355-4770-93d8-040b38196c18" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1176f1e9-6acc-4afd-bc56-4a1655dd87ba" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="f6662b0f-14de-483c-8e6d-6a6a9476c1c2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0c3ab368-35b8-4ef1-a56f-9d7df38d8445" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="9825a589-26a5-4d41-a631-596bbae7d0b9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d8c5afeb-75b9-4401-a4e0-bb3906f6756e" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4784cc3f-38a5-4ca1-a638-36b565e6cda0" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a1653b40-022c-4aaf-aafd-53930ed94cae" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5c7ed6a4-6e88-42e6-b2f0-b67d2da27aa1" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d502a43f-8f1c-40cf-8995-e7e3fd7a46e0" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="44682272-54da-475c-854e-de00d4372ea3" name="int 0" isAbstract="false" isLeaf="false" cachedFullName="int 0">
+        <elementDefinition Id="32ff1e55-06d6-42bb-897e-2dcaf3f21861" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="73dfb362-3727-447c-b3bb-3334ca5653be" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="e3f08995-00e4-4a3c-9f7c-a8cda1b278b6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="458a47e9-d759-4fe5-8498-201be5f6514f" name="CaTron UML::Player" isAbstract="false" isLeaf="false" cachedFullName="CaTron UML::Player">
+        <elementDefinition Id="23903796-f926-4676-88c0-df1c3220c756" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d4fe4e6b-6f9a-4cf8-bfe8-a5732dab678c" name="Char" isAbstract="false" isLeaf="false" cachedFullName="Char">
+        <elementDefinition Id="826732fa-6fe4-44e9-bfc4-0580db1877b3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e53d5b7f-5620-42b3-b058-9b9b480399ed" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="1bc55bd8-f3f2-4882-9e62-9ede9240e759" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b4e4d502-a882-4037-9e46-fe98b84782f0" name="-1" isAbstract="false" isLeaf="false" cachedFullName="-1">
+        <elementDefinition Id="5f46b84c-d71f-4658-b037-da6745e9e387" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6ddecd74-8e60-48ae-bd95-86657272b6aa" name="-1" isAbstract="false" isLeaf="false" cachedFullName="-1">
+        <elementDefinition Id="5f46b84c-d71f-4658-b037-da6745e9e387" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a5afcad2-ee03-4fe3-8c1b-308d2268e5a2" name="CaTron UML::Tile" isAbstract="false" isLeaf="false" cachedFullName="CaTron UML::Tile">
+        <elementDefinition Id="ff3e72d2-6482-42b7-9ca3-bb662e1a7c4f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="95057a31-c61f-483a-add8-4b800960c36b" name="Bool" isAbstract="false" isLeaf="false" cachedFullName="Bool">
+        <elementDefinition Id="71bad3f0-d137-4bbd-b3bb-a2bfbba1a662" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c519aba6-b45a-4ed6-a2c6-b2fd89d9f3be" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="ecdb974f-ccf1-41c8-9d66-aba46d309c83" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="896ad46a-7551-4f57-9c51-176d3d134740" name="Board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77006e94-8d2f-4d12-876a-7398146be9fe" />
+        <targetEnds>
+          <association Id="75f38d8e-9a37-47ea-be70-ded414d48915" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Player" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bddbe6fe-b686-4e09-985a-c15cabcfc4ed" LastKnownName="Player" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d0e581d-c71d-40dc-8f9e-5421d4ca5b0e" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a762299d-28d2-4a19-9e1a-5422edc68cd4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb437f93-d4d8-4aa4-8692-d4c7ae7f01d0" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="23a6d598-3e1f-430b-8bf1-c665e80c5a84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2237c1d9-fb2f-4793-ae60-731383c87401" />
+          </association>
+          <association Id="f146b096-9cea-4a90-87da-6f103cbd7c91" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Tile" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3a16cb53-d299-432a-babe-e8f09c4fcada" LastKnownName="Tile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6549e680-cfcf-490d-a4c7-f47169c39005" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3882f31a-335f-4c4a-934d-5f9895a520eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58299dfb-f367-4764-b0ec-a2ef0c468ad9" name="Tile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="d6c5a8d0-65fb-4fc1-bfb9-2c3b94d40876" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a2d9237-e665-4595-81da-eda0569dfe3b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c4c220f1-016f-4a03-ad7a-22358d676a19" name="Player Count" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de414628-d915-4a88-abf8-ea66a556aea9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="5ebd4573-5dc2-4195-a74e-cb252e12d50a" name="Board coordinates" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8c020c9-1819-4b1f-bfd6-1a10bc98bae0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="de8bdeb0-365b-41f1-ab67-1c65903fa191" LastKnownName="Row int  [Column int[Tile]]" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2a20caa6-ca78-40aa-9a60-7d2f24cc7e7c" name="Constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0f048d05-366b-4c87-aae7-67158fde72c8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bea07a7c-c254-4aeb-a285-e9c8a63d79ab" direction="Return" isUnique="false">
+                  <elementDefinition Id="32415220-74de-4da6-8052-f57c5e51c2da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="27f37375-fb04-4e8b-93ec-7185abc82d69" LastKnownName="CaTron UML::Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="11f1762f-1b30-4861-9390-705c3f9b2815" name="player Count" direction="In" isUnique="false">
+                  <elementDefinition Id="88ef2d6b-8fb3-45b1-bc43-e8dfc7fab7c0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="05bb76e5-c44c-4dea-805e-f1b9fa8eb4de" name="Print Board" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dae3d6b8-2c42-4184-8307-c57fe2acb842" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed4f23f7-ca4a-4e5e-8757-bf61d696ada2" direction="Return" isUnique="false">
+                  <elementDefinition Id="422a1348-0045-4526-982e-cd72d758ad4b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8c48c247-4a09-4050-984e-05c17f13cc93" name="DiceRoll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbc8bd81-ba81-4644-b4ba-8646b29b469b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d3912f74-b12c-4a53-9c4e-e379ad474501" direction="Return" isUnique="false">
+                  <elementDefinition Id="6283a9d4-6922-4f9a-aa23-bbed2eb58345" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cef8dad4-d3c4-4980-b3ae-b4be9171ce0c" name="SevenRollCheck" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3ef9bdce-dac6-41f1-a443-8004cbb41886" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c819d907-de65-4c11-88e6-264582ccb251" direction="Return" isUnique="false">
+                  <elementDefinition Id="1ed60139-7bd1-470a-be71-f7547259b09f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1176f1e9-6acc-4afd-bc56-4a1655dd87ba" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3b5f3ff6-2224-403d-8bc1-1e1a5c693026" name="Check Adjacency" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="23e3d9c8-c698-42b5-8358-b342047f0960" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="865cd188-e08c-43c6-bd77-d30867e0f926" name="row" direction="In" isUnique="false">
+                  <elementDefinition Id="84d8276b-fbd5-4eea-83ad-5fe94f26a796" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="96a86d3e-b536-42a7-a103-f39eec68a794" name="column" direction="In" isUnique="false">
+                  <elementDefinition Id="afe392fa-3870-4e89-b1a5-074a7e58074d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec799c96-3c7d-43ba-845b-8a54089d3642" direction="Return" isUnique="false">
+                  <elementDefinition Id="9ebc22bd-b1b0-44d9-94ca-48ae1c052524" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0c3ab368-35b8-4ef1-a56f-9d7df38d8445" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bddbe6fe-b686-4e09-985a-c15cabcfc4ed" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="268edd5e-3667-493d-9071-f1535e2782e0" />
+        <targetEnds>
+          <association Id="f2c25c68-d1d4-488a-9804-733da8071bbc" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Tile" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3a16cb53-d299-432a-babe-e8f09c4fcada" LastKnownName="Tile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac8008ff-0627-42e1-bb1e-aec31a38265b" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="100ae8ae-ee37-410c-a8f7-eb8c826536ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5dbf2871-6fe5-468b-88f6-fd4f982a8f8e" name="Tile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="645f2bd4-d676-42cb-b0b2-c40092eef928" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3bd76a98-3c5c-4fe2-8689-2b1accc57e5b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="863960d8-176e-4763-b0b2-65ec66696e40" name="CardsInHand" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26c725e6-1571-4a9f-acb9-f8f72910ee62" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d8c5afeb-75b9-4401-a4e0-bb3906f6756e" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="87210a12-815d-4fea-8ef1-5826761899bb" name="Brick" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e69ffca8-2ce5-4f2e-a21a-383edfa8fba3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4784cc3f-38a5-4ca1-a638-36b565e6cda0" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="7ba89b4e-5ac9-4e9c-aa25-f3259971ad4b" name="Sheep" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e83719c6-522b-4f4d-b8ae-b4c818d1b212" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a1653b40-022c-4aaf-aafd-53930ed94cae" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="b5badce7-2b20-4510-bc23-4e9092fb2ebd" name="Wheat" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca3dc430-1135-441c-8a37-c3131c7cc03b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5c7ed6a4-6e88-42e6-b2f0-b67d2da27aa1" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="54cb35b0-ae04-407e-a841-4b3c2c5fbcda" name="Ore" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07506903-be64-41f0-b537-0620c22f07bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d502a43f-8f1c-40cf-8995-e7e3fd7a46e0" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="021793d8-0a67-4601-b32a-4edcef3d5370" name="Wood" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93b85266-7415-4faf-bf2a-c68eefbb9bab" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="44682272-54da-475c-854e-de00d4372ea3" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+          <property Id="17b32ac6-a363-4f63-bcc4-315f7d485623" name="PlayerPoints" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a665e1b3-9d54-4c79-899c-bfb96680581e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4784cc3f-38a5-4ca1-a638-36b565e6cda0" LastKnownName="int 0" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="694ba958-15fb-48d4-aa1a-ff7d8ed9be91" name="ChangeResource" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd8a8d79-38bd-460c-bbdb-4bdf0d8a8d7e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c946f74-103d-45b7-9433-65e0237f9f50" direction="Return" isUnique="false">
+                  <elementDefinition Id="de103239-b674-4b94-b4cb-ed2119e96b9c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1176f1e9-6acc-4afd-bc56-4a1655dd87ba" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38beff36-c0bc-4615-8d9b-302075c00828" name="Resource" direction="In" isUnique="false">
+                  <elementDefinition Id="cb73052e-6f2d-43c0-9683-876f0467cc20" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="73dfb362-3727-447c-b3bb-3334ca5653be" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="95c4bd76-87fe-4ec8-93b3-562302ce5eab" name="Amount" direction="In" isUnique="false">
+                  <elementDefinition Id="ca976b70-8ce1-48b9-aa18-2acec9761d7b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c4270521-78cc-4c24-8404-1bba5346b0ae" name="Constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="268e35e4-3a9d-4970-a045-5918a67f60ff" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e10df6a5-6285-4d79-8216-a9daad2d778c" direction="Return" isUnique="false">
+                  <elementDefinition Id="cf64a256-a93b-482f-9218-613b8e817ffc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="458a47e9-d759-4fe5-8498-201be5f6514f" LastKnownName="CaTron UML::Player" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ac0d4220-ca46-4534-a484-6d7f6bc95de3" name="Buy Road" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f2f5073-a9ad-42b3-b177-9a4df0aa67c1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="467016c1-aa5e-4774-9f85-82bba9547080" direction="Return" isUnique="false">
+                  <elementDefinition Id="199b3a6a-e054-45ff-aa63-f505b27cd387" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="06c99180-dd43-4dcf-a070-6fb0b9c8d5ab" name="Buy House" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7645dbbe-18ce-497f-828e-4c7988917598" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94576753-2457-4bba-9b16-1c051e3299c6" direction="Return" isUnique="false">
+                  <elementDefinition Id="dcb82753-0537-4704-9c8b-adb427c2806c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6e5bbcc2-844a-4fd5-8568-53e5164f25b6" name="Buy Town" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d28a110-20d7-439b-9737-a2d6cd83f0ad" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="17a2d3a5-89ee-443c-9656-6e429df0b818" direction="Return" isUnique="false">
+                  <elementDefinition Id="7a0b9729-5a34-482f-8462-daf0b46c0b5b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bb81c7ff-bedb-4c35-878c-4486f3194105" name="Exchange Card" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8eb47c11-ee01-46b4-bdc9-42380387e47c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59e28c7a-f8ad-40c0-9c86-dd438fe91d7c" direction="Return" isUnique="false">
+                  <elementDefinition Id="f83f5f96-2b98-42a3-999f-adda5b648f09" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="181bc8c4-d440-4646-9a95-b92c9940a964" name="GetCardsinhandvalue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f77cee2-5c4e-4320-8309-36fb8009d7a1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="57a3c7fd-819d-4f00-b9bc-6c7e6f32abb2" direction="Return" isUnique="false">
+                  <elementDefinition Id="03afa042-de0b-4ac4-8a19-3f88ac6edbce" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="32544d26-2ad8-4afb-b3eb-e5f07258ae5b" name="DisplayPlayerHand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48496a3d-7cc2-46d4-827d-846c4605de13" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9c6496bb-7099-41eb-b9b3-49c3ce333276" direction="Return" isUnique="false">
+                  <elementDefinition Id="3ee5416c-74ee-4a3f-82f4-b66eeec07e9f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3a16cb53-d299-432a-babe-e8f09c4fcada" name="Tile" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b80b59be-ce39-4335-bf09-3c4bde343786" />
+        <ownedAttributesInternal>
+          <property Id="b69ab441-092a-44b5-babd-412b96ebd77e" name="Tile Type" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e75880d6-6345-4aeb-89b4-948b1c088fd3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d4fe4e6b-6f9a-4cf8-bfe8-a5732dab678c" LastKnownName="Char" />
+            </type_NamedElement>
+          </property>
+          <property Id="7b4e05f8-bf72-42c2-bdfb-5204b7aafdd7" name="Tile Value" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a192d4de-de19-4588-aa6d-71359d8c5109" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e53d5b7f-5620-42b3-b058-9b9b480399ed" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="805eefd0-5cba-4a19-8a48-6260825c9d1e" name="Robber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4379ccf-183d-43d2-a8e3-7103f39d2c6a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0c3ab368-35b8-4ef1-a56f-9d7df38d8445" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="48a3f0ef-c90a-49f3-bccc-b2f311f2c050" name="TileNodes : Node int[6]" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="3e775952-1011-4a44-8897-c88f0067262c" name="Lower" value="1">
+                <elementDefinition Id="92440f79-8a2d-44ac-b412-39d55747fd21" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="8cef3722-fd4f-46be-b21b-1626f8cf73b5" name="Upper" value="1">
+                <elementDefinition Id="0bbdf6e4-04d3-4559-9b06-407875c6adbf" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="5ecc43fd-b2a1-490d-aee4-8f6f4334a371" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b4e4d502-a882-4037-9e46-fe98b84782f0" LastKnownName="-1" />
+            </type_NamedElement>
+          </property>
+          <property Id="2874713c-f625-4d20-8faf-b014c2f9bd72" name="TileSides : Side int[6]" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="2d37f1fb-3f7c-46ce-a0aa-4ed699c769d6" name="Lower" value="1">
+                <elementDefinition Id="fc0c8977-6f6f-4d66-a3d0-c6e78292ba09" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="7467bddc-9f4e-49be-bc07-17616c758077" name="Upper" value="1">
+                <elementDefinition Id="80d40daa-b902-46fb-99b8-20f8a75fe2a3" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="bb787b19-504e-4b71-aebc-0d98dcff0c81" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6ddecd74-8e60-48ae-bd95-86657272b6aa" LastKnownName="-1" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b12a13ba-e010-43a5-845d-fffb68a40467" name="Constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4e5fb0af-81c0-4a77-bf54-00b3ab5c353b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f52882c-956a-4852-ab72-66e4c0c380b8" name="TileType" direction="In" isUnique="false">
+                  <elementDefinition Id="a5b54e5e-a69d-416c-a9a1-8e9cada8df03" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d4fe4e6b-6f9a-4cf8-bfe8-a5732dab678c" LastKnownName="Char" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="625a0375-420d-46cc-b837-d24f6e481817" name="TileValue" direction="In" isUnique="false">
+                  <elementDefinition Id="de187428-f3d1-4a05-940c-b4308cbdaa43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0500237f-8619-4f7b-933d-e5b2c0f41429" name="Robber" direction="In" isUnique="false">
+                  <elementDefinition Id="de819692-44ea-4236-a853-e5ebdceef53a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0c3ab368-35b8-4ef1-a56f-9d7df38d8445" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8847e749-d6d4-4cb9-8784-543af99ed0f8" direction="Return" isUnique="false">
+                  <elementDefinition Id="1dd9d893-ab90-48ea-a9b3-d6495adfa14c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a5afcad2-ee03-4fe3-8c1b-308d2268e5a2" LastKnownName="CaTron UML::Tile" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c0abb3ac-424b-453e-9d74-e4c31fe2f559" name="getTileType" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8fb62a64-5139-472d-9cd3-859b896846b6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ad05a054-45e1-4606-9d07-eb4d07a5a223" direction="Return" isUnique="false">
+                  <elementDefinition Id="951426a9-e076-4cd8-a0ea-ca6d686db728" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d4fe4e6b-6f9a-4cf8-bfe8-a5732dab678c" LastKnownName="Char" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="954a74bc-5b78-47d8-8881-4558ae836647" name="getTileValue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="373289e7-e0ed-4f1c-85b2-08a0cfbc0005" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45697bed-c555-4b31-b18b-439ef480076e" direction="Return" isUnique="false">
+                  <elementDefinition Id="9ebe3162-fcd7-43f6-9549-960110ac32c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e972ad6d-501b-43d7-8c1c-f57293b2fa2b" name="getRobber" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c0f97c44-4fff-48a6-9a32-562f1e2ccb6c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="faecea44-738e-4fc8-8ab8-6868e0204d6f" direction="Return" isUnique="false">
+                  <elementDefinition Id="dfa771bd-9623-4df6-bcf1-ed4922933f61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="95057a31-c61f-483a-add8-4b800960c36b" LastKnownName="Bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f979eaee-f4a6-462f-b2a0-95321cdac9cb" name="setRobber" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="10b66888-0849-4232-9d4d-46dddbd078b1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="57a9ef6d-afc4-471b-9b3b-f39db20123a8" direction="Return" isUnique="false">
+                  <elementDefinition Id="4ec3a983-5382-4c30-9cba-0a886c49b691" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1176f1e9-6acc-4afd-bc56-4a1655dd87ba" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9970fccc-ebbb-4351-a21f-13b9942cde84" name="giveResources" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c1af5ca-ec2a-4bcc-8a0f-f3c14a5c8d06" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="02188416-2bff-49a5-8e57-ccfb303ad900" direction="Return" isUnique="false">
+                  <elementDefinition Id="d07cf6cf-fe56-4070-926b-5cb89362eb1a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1176f1e9-6acc-4afd-bc56-4a1655dd87ba" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b02352b6-529b-4369-8ffa-ef6c560d8560" name="SetHouse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="085dc281-b912-4b46-99f1-e6809e2f2f53" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b954e078-57e2-406c-8b23-9f87eccde5fd" direction="Return" isUnique="false">
+                  <elementDefinition Id="e0509248-a988-4b0e-8b78-a02d6e3f5adb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="22b90b3d-4962-45bf-82d7-597d590d97e7" name="Node" direction="In" isUnique="false">
+                  <elementDefinition Id="7fff9180-6cbe-4d3e-bcee-35c7045f709a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="38a35a67-7e2c-4852-816f-50244158c21c" name="SetTown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ca56322d-b357-44fb-b0eb-941c16de82d7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="18b21875-3637-464e-9810-d2b43e6eac3b" direction="Return" isUnique="false">
+                  <elementDefinition Id="113d89c5-89a9-4a4c-915e-7dfc214f7b7a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0e0d7879-a278-4503-851b-78efa81e5614" name="Node" direction="In" isUnique="false">
+                  <elementDefinition Id="c199cee9-dfb1-4f55-8b3f-982fb013bf40" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="45d73f92-0cd2-43d0-92cb-9994565e54b6" name="SetRoad" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="697bbd58-6d33-49fe-9159-ac3f1ff1a3b9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="efb7cc32-3271-4b82-9752-f9db80dc1057" direction="Return" isUnique="false">
+                  <elementDefinition Id="b2422b71-e55b-47f7-8b91-c3e570297b0f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e6a2bfd7-9e14-411d-9310-7916ce80e387" LastKnownName="Void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9d4f80f6-eae4-4631-8237-fb29b10d9a5e" name="Side" direction="In" isUnique="false">
+                  <elementDefinition Id="ac3cb4a0-697a-4f19-a374-f4f3852f5f68" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7c235c6d-6214-488d-a226-f2411f28465d" name="GetPlayerNode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ceb8aa1d-fbd2-4500-8350-666fe545ef52" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="51b34468-b581-42e6-9edc-727a6514dd96" direction="Return" isUnique="false">
+                  <elementDefinition Id="7f62ab24-e1a5-4ce1-bb4b-76266d26a104" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c519aba6-b45a-4ed6-a2c6-b2fd89d9f3be" LastKnownName="Int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b435f77c-e91f-4ca3-ae32-abd1edd587a6" name="GetPLayerSide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4cb610a7-b662-4609-b308-7bfe0933cdff" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="77b4ace5-2388-4921-8f6a-9215ddeb8635" direction="Return" isUnique="false">
+                  <elementDefinition Id="00da43de-a35b-4aba-9fce-3ac440185167" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="067612a4-6160-4dc8-8756-34d6c635b327" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a550f1f6-94b6-431d-8896-d09aca4e8e29" name="ModelingProject1">
+    <elementDefinition Id="9fb4beb6-c774-43ae-bf3f-69dda046006e" />
+  </package>
+</logicalClassDesignerModel>
